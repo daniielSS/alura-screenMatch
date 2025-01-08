@@ -8,6 +8,24 @@ public class Titulo {
 	private double somaAvaliacoes;
 	private int totalAvaliacoes;
 	private String anoLancamento;
+	private Filme filme;
+	private Serie serie;
+
+	public Filme getFilme() {
+		return filme;
+	}
+
+	public void setFilme(Filme filme) {
+		this.filme = filme;
+	}
+
+	public Serie getSerie() {
+		return serie;
+	}
+
+	public void setSerie(Serie serie) {
+		this.serie = serie;
+	}
 
 	public String getAnoLancamento() {
 		return anoLancamento;

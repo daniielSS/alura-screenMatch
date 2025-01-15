@@ -15,7 +15,8 @@ public class TituloCommandImpl implements TituloCommand {
 	public void adicionarTitulo(Titulo titulo) {
 		titulo = null;
 
-		System.out.println("SCREENMATCH");
+		System.out.println("SCREENMATCH Gestão");
+		System.out.println(" ");
 		System.out.println("O que você deseja adicionar?");
 		System.out.println(" ");
 		System.out.println("1- Filme");
@@ -30,9 +31,6 @@ public class TituloCommandImpl implements TituloCommand {
 			int opcaoSelecionada = scanner.nextInt();
 
 			switch (opcaoSelecionada) {
-			case 0:
-				adicionarTitulo(titulo);
-				break;
 			case 1:
 				tituloService.adicionarTitulo(opcaoSelecionada, titulo);
 				break;

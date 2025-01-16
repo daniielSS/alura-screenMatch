@@ -74,7 +74,7 @@ public class WelcomeScreen {
 
 		if (email.equals(usuario.getEmail()) && senha.equals(usuario.getSenha())) {
 			if (usuario.getTipoUsuario() == TipoUsuario.ASSINANTE) {
-				System.out.println("Bem-vindo " + usuario.getUsuario() + "!");
+				System.out.println("Bem-vindo " + usuario.getNomeUsuario() + "!");
 				isValid = true;
 			} else {
 				System.out.println("Você não é assinante :(");

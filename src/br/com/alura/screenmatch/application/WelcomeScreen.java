@@ -1,13 +1,14 @@
 package br.com.alura.screenmatch.application;
 
-import static br.com.alura.screenmatch.enums.TipoUsuario.*;
-
 import java.util.Scanner;
 
 import br.com.alura.screenmatch.enums.TipoUsuario;
 import br.com.alura.screenmatch.models.Usuario;
+import br.com.alura.screenmatch.service.UsuarioService;
 
 public class WelcomeScreen {
+	
+	private UsuarioService usuarioService;
 
 	public void iniciarApp() {
 		Scanner scanner;
@@ -66,7 +67,37 @@ public class WelcomeScreen {
 	}
 
 	public void cadastroUsuario() {
+		boolean isValid = false;
+		Scanner scannerNome;
+		Scanner scannerSobrenome;
+		Scanner scannerEmail;
+		Scanner scannerSenha;
 		
+		try {
+			System.out.println("--- Preencha os dados básicos ---");
+			System.out.println(" ");
+			
+			System.out.print("Digite seu nome: ");
+			scannerNome = new Scanner(System.in);
+			String nome = scannerNome.nextLine();
+			
+			System.out.print("Digite seu sobrenome: ");
+			scannerSobrenome = new Scanner(System.in);
+			String sobrenome = scannerSobrenome.nextLine();
+			
+			System.out.print("Digite seu e-mail: ");
+			scannerEmail = new Scanner(System.in);
+			String email = scannerEmail.nextLine();
+			
+			System.out.print("Digite uma senha: ");
+			scannerSenha = new Scanner(System.in);
+			String senha = scannerSenha.nextLine();
+			
+			usuarioService.cadastroUsuario(nome, sobrenome, email, senha);
+			loginUsuario();
+		} catch(Exception e){
+			e.printStackTrace();
+		}
 	}
 
 	public boolean validarCredenciais(String email, String senha, boolean isValid) {

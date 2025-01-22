@@ -26,3 +26,4 @@ hs_err_pid*
 replay_pid*
 bin/br/com/alura/screenmatch/application/App.class
 bin/br/com/alura/screenmatch/models/Titulo.class
+src/br/com/alura/screenmatch/application/DataSource.java

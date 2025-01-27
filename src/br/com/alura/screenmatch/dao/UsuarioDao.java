@@ -3,8 +3,10 @@ package br.com.alura.screenmatch.dao;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+import br.com.alura.screenmatch.models.Usuario;
+
 public interface UsuarioDao {
 	
-	void cadastroUsuario(String nome, String sobrenome, String email, String senha, Connection connection) throws SQLException;
+	void cadastroUsuario(Usuario usuario, Connection connection) throws SQLException;
 	
 }

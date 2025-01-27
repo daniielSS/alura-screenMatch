@@ -5,10 +5,11 @@ import java.util.Scanner;
 import br.com.alura.screenmatch.enums.TipoUsuario;
 import br.com.alura.screenmatch.models.Usuario;
 import br.com.alura.screenmatch.service.UsuarioService;
+import br.com.alura.screenmatch.serviceImpl.UsuarioServiceImpl;
 
 public class WelcomeScreen {
 	
-	private UsuarioService usuarioService;
+	static UsuarioService usuarioService = new UsuarioServiceImpl();
 
 	public void iniciarApp() {
 		Scanner scanner;
@@ -94,7 +95,6 @@ public class WelcomeScreen {
 			String senha = scannerSenha.nextLine();
 			
 			usuarioService.cadastroUsuario(nome, sobrenome, email, senha);
-			loginUsuario();
 		} catch(Exception e){
 			e.printStackTrace();
 		}

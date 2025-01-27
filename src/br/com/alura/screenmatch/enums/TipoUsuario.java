@@ -1,10 +1,9 @@
 package br.com.alura.screenmatch.enums;
 
 public enum TipoUsuario {
-	VISITANTE(2, "Visitante"), ASSINANTE(1, "Assinante"), ADMIN(0, "Admin");
+	VISITANTE(2), ASSINANTE(1), ADMIN(0);
 	
 	private int idTipoUsuario;
-	private String descricao;
 	
 	public int getIdTipoUsuario() {
 		return idTipoUsuario;
@@ -14,16 +13,7 @@ public enum TipoUsuario {
 		this.idTipoUsuario = idTipoUsuario;
 	}
 
-	public String getDescricao() {
-		return descricao;
-	}
-
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
-
-	TipoUsuario(int id, String descricao) {
+	TipoUsuario(int id) {
 		this.idTipoUsuario = id;
-		this.descricao = descricao;
 	}
 }

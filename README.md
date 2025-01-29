@@ -1,3 +1,3 @@
 # Projeto ScreenMatch
 
-Seja bem-vindo ao ScreenMatch, este é um projeto em desenvolvimento que tem por objetivo a aplicação dos conceitos apresentado nos cursos de Java da plataforma Alura.
+Seja bem-vindo ao ScreenMatch, este é um projeto em desenvolvimento que tem por objetivo a aplicação prática dos conceitos apresentados nos cursos de Java base da plataforma Alura.

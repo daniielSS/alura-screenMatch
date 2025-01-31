@@ -1,6 +1,5 @@
 package br.com.alura.screenmatch.service;
 
-import java.sql.Connection;
 import java.sql.SQLException;
 
 public interface UsuarioService {

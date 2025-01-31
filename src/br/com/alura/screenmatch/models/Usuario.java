@@ -10,6 +10,15 @@ public class Usuario {
 	private String email;
 	private String senha;
 	private TipoUsuario tipoUsuario;
+	private CartaoDeCredito cartaoDeCredito;
+
+	public CartaoDeCredito getCartaoDeCredito() {
+		return cartaoDeCredito;
+	}
+
+	public void setCartaoDeCredito(CartaoDeCredito cartaoDeCredito) {
+		this.cartaoDeCredito = cartaoDeCredito;
+	}
 
 	public String getNome() {
 		return nome;

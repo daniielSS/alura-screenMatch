@@ -123,10 +123,7 @@ public class WelcomeScreen {
 	public boolean validarCredenciais(String email, String senha, boolean isValid) throws Exception {
 		Usuario usuario = new Usuario();
 
-		usuario.setNome("Teste");
-		usuario.setSobrenome("Usuario");
-		usuario.setEmail("testeapp.g@gmail.com");
-		usuario.setSenha("4417");
+		//Futura implementação para buscar o usuário da base de dados
 
 		if (email.equals(usuario.getEmail()) && senha.equals(usuario.getSenha())) {
 			isValid = true;

@@ -26,6 +26,6 @@ public class UsuarioServiceImpl implements UsuarioService {
 		usuario.setEmail(email);
 		usuario.setSenha(senha);
 		usuarioDao.cadastroUsuario(usuario, connection);
-		System.out.println("Usuário Cadastrado com sucesso!");
+		System.out.println("Usuï¿½rio Cadastrado com sucesso!");
 	}
 }

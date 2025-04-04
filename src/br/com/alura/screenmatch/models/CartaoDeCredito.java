@@ -68,22 +68,33 @@ public class CartaoDeCredito {
 		List<TipoEmissores> listEmissores = new ArrayList<>();
 		listEmissores.add(TipoEmissores.MASTERCARD);
 		listEmissores.add(TipoEmissores.VISA);
-
-		if (numeroCartao.startsWith("5") || numeroCartao.startsWith("4")) {
-			char valorEmissor = numeroCartao.charAt(0);
-			switch (valorEmissor) {
-			case '5':
-				emissor = listEmissores.get(0).name();
-				break;
-			case '4':
-				emissor = listEmissores.get(1).name();
-				break;
-			default:
-				break;
-			}
-		} else {
-			System.out.println("Cartão inválido!");
+		
+		char valorEmissor = numeroCartao.charAt(0);
+		switch (valorEmissor) {
+		case '5':
+			emissor = listEmissores.get(0).name();
+			break;
+		case '4':
+			emissor = listEmissores.get(1).name();
+			break;
+		default:
+			System.out.println("Cartão Inválido!");
+			break;
 		}
+
+//		if (numeroCartao.startsWith("5") || numeroCartao.startsWith("4")) {
+//			char valorEmissor = numeroCartao.charAt(0);
+//			switch (valorEmissor) {
+//			case '5':
+//				emissor = listEmissores.get(0).name();
+//				break;
+//			case '4':
+//				emissor = listEmissores.get(1).name();
+//				break;
+//			default:
+//				break;
+//			}
+//		}
 		return emissor;
 	}
 }

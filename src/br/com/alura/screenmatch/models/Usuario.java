@@ -11,9 +11,14 @@ public class Usuario {
 	private String senha;
 	private TipoUsuario tipoUsuario;
 	private CartaoDeCredito cartaoDeCredito;
+	private boolean assinaturaAtiva;
 
 	public CartaoDeCredito getCartaoDeCredito() {
 		return cartaoDeCredito;
+	}
+
+	public boolean isAssinaturaAtiva() {
+		return assinaturaAtiva;
 	}
 
 	public void setCartaoDeCredito(CartaoDeCredito cartaoDeCredito) {

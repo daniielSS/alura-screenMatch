@@ -31,4 +31,4 @@ bin/br/com/alura/screenmatch/models/Titulo.class
 src/br/com/alura/screenmatch/application/DataSource.java
 *.txt
 *.env
-*.ideal/
+*.idea/

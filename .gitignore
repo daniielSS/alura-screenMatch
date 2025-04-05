@@ -18,9 +18,10 @@
 *.zip
 *.tar.gz
 *.rar
-*.class
 *.metadata
 *.classpath
+*.iml
+*.xml
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
@@ -29,5 +30,5 @@ bin/br/com/alura/screenmatch/application/App.class
 bin/br/com/alura/screenmatch/models/Titulo.class
 src/br/com/alura/screenmatch/application/DataSource.java
 *.txt
-*.class
 *.env
+*.idea/
